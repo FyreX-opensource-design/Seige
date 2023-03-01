@@ -1,0 +1,12 @@
+<app>
+  <p>{ props.message }</p>
+  <script>
+  export default {
+    components {
+    home: lazy(Loader() => import (
+        './pages/home.riot'
+    ))
+    },
+  }
+  </script>
+</app>
